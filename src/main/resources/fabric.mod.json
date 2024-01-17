@@ -1,0 +1,30 @@
+{
+  "schemaVersion": 1,
+  "id": "notanautoclicker",
+  "version": "${version}",
+  "name": "NotAnAutoClicker",
+  "description": "",
+  "authors": [],
+  "contact": {
+    "repo": "https://github.com/GeoWhat/NotAnAutoClicker"
+  },
+  "license": "GPL-3.0",
+  "icon": "assets/notanautoclicker/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "client": [
+      "me.geowhat.notanautoclicker.client.NotAnAutoClickerClient"
+    ],
+    "main": [
+      "me.geowhat.notanautoclicker.NotAnAutoClicker"
+    ]
+  },
+  "mixins": [
+    "notanautoclicker.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "fabric": "*",
+    "minecraft": "${minecraft_version}"
+  }
+}
