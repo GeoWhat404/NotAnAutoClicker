@@ -27,7 +27,7 @@ public class AutoClickerKeyBinding {
 
     public static void registerInputs() {
         ClientTickEvents.END_CLIENT_TICK.register(client -> {
-            if (openSettingsKey.isDown()) {
+            while (openSettingsKey.consumeClick()) {
                 client.setScreen(new AutoClickerScreen());
             }
         });
